@@ -22,3 +22,8 @@ spring:
 logging:
   level:
     me.polymorph: DEBUG
+
+jwt:
+  header: Authorization
+  secret: bGVjdHVyZS1qd3QtdHV0b3JpYWwtcG9seW1vcnBoLWRlZmVyLWRhdGFzb3VyY2UtaW5pdGlhbGl6YXRpb24tdHJ1ZQo= # echo 'lecture-jwt-tutorial-polymorph-defer-datasource-initialization-true'|base64
+  token-validity-in-seconds: 86400 # 60 * 60 * 24 = 1일
