@@ -1,0 +1,2 @@
+GET http://localhost:8080/api/user/poly
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTY1NDQ5MjgzN30.WfqWB9IVYw1Kxd31S2zPsu4PQ5kJFfAYb2uRJ-Y-dxcg20aGhpUwtCcKLLcASEkxfD0gQZdX49h3UAfPTgq-5g
