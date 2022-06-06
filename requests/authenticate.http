@@ -1,0 +1,12 @@
+POST http://localhost:8080/api/authenticate
+Content-Type: application/json
+
+{
+  "username" : "admin",
+  "password" : "admin"
+}
+
+//response 예시
+//{
+//  "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTY1NDQ4ODcyMH0.zR2k4IRm5frlcBmRsfXBFyvWeM9huDrmypvMqx65BAVIbwECSrmI-cIvs3GvPluy84ky4SY68VqnZiM_wtoUiA"
+//}

@@ -18,5 +18,18 @@
   - 혹은 h2 버전을 강제로 낮추면 된다고 한다.
   - 참고 링크 : <https://www.inflearn.com/questions/546219>
 
+## 4강
+- password 저장 부분에 Security 버전에 따른 변경 사항이 있다.
+  - 패스워드의 prefix로 저장된 비밀번호의 알고리즘 id가 필요하다 e.g. 원래비밀번호 -> {bycrypr}원래비밀번호
+  - 사용자가 요청한 패스워드를 인코드 후 저장 값과 비교할 텐데, 이 인코더를 등록해야 한다.
+  - bcrypt의 경우 아래와 같이 빈을 추가해준다.
+  ```java
+    @Bean
+    public static PasswordEncoder passwordEncoder() {
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    }
+  ```
+  
+
 # 완강 이후 추가 사항
 - [ ] 강의 소스 부분의 테스트 코드를 추가하기
